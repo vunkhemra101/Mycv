@@ -15,7 +15,7 @@ export default function Contact({ currentLang }) {
       labelMsg: "Project Scope",
       placeName: "John Doe",
       placeEmail: "john@example.com",
-      placeMsg: "Describe the deployment guidelines...",
+      placeMsg: "Describe the deployment guidelines",
       btnSubmit: "Transmit Message"
     },
     KH: {
@@ -27,7 +27,7 @@ export default function Contact({ currentLang }) {
       labelMsg: "ខ្លឹមសារសារ / ទំហំគម្រោង",
       placeName: "បញ្ចូលឈ្មោះរបស់អ្នក",
       placeEmail: "ឈ្មោះអ៊ីមែល",
-      placeMsg: "រៀបរាប់ពីព័ត៌មាន ឬគម្រោងដែលអ្នកចង់ពិភាក្សា...",
+      placeMsg: "រៀបរាប់ពីព័ត៌មាន ឬគម្រោងដែលអ្នកចង់ពិភាក្សា",
       btnSubmit: "ផ្ញើសារចេញ"
     }
   };

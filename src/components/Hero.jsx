@@ -71,7 +71,7 @@ export default function Hero({ currentLang }) {
           </span>
         </h1>
 
-        <p className="text-lg text-justify md:text-xl text-slate-400 max-w-xl leading-relaxed">
+        <p className="text-lg text-left md:text-xl text-slate-400 max-w-xl leading-relaxed">
           {currentContent.desc}
         </p>
 
