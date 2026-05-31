@@ -4,7 +4,6 @@ import { FaGithub, FaFacebook, FaTelegram } from "react-icons/fa";
 import ContactForm from '../client/ContactForm'; //
 
 export default function Contact({ currentLang }) {
-  // ប្រព័ន្ធទិន្នន័យបកប្រែភាសារបស់អ្នក
   const translations = {
     EN: {
       sectionTitle: "Get In Touch",
@@ -47,9 +46,7 @@ export default function Contact({ currentLang }) {
         </h2>
         <div className="w-12 h-1 bg-cyan-500 mx-auto rounded-full" />
       </motion.div>
-
       <div className="grid grid-cols-1 md:grid-cols-12 gap-12 max-w-4xl mx-auto items-start">
-        {/* ផ្នែកខាងឆ្វេង៖ បណ្តាញទំនាក់ទំនងព័ត៌មានផ្ទាល់ខ្លួន */}
         <div className="md:col-span-5 space-y-6">
           <div className="p-5 rounded-xl border border-slate-800/60 bg-slate-900/20 backdrop-blur-sm">
             <h4 className="text-slate-500 text-xs uppercase tracking-wider mb-1">

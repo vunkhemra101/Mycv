@@ -25,8 +25,8 @@ export default function ContactForm({ text, currentLang }) {
       alert(currentLang === 'KH' ? "សូមបំពេញព័ត៌មានឱ្យបានគ្រប់គ្រាន់!" : "Please fill out all fields!");
       return;
     }
+    //Message
 
-    // ទម្រង់សារផ្ញើទៅ Telegram (រក្សាជាភាសាអង់គ្លេសងាយស្រួលអានលើ App)
     const telegramMessage = `
 📩 *New Message From Portfolio*
 ──────────────────────
@@ -53,7 +53,7 @@ export default function ContactForm({ text, currentLang }) {
           : `✉️ Message transmitted successfully to Telegram!`
         );
         setShowToast(true);
-        setFormData({ identity: '', email: '', projectScope: '' }); // សម្អាតប្រអប់
+        setFormData({ identity: '', email: '', projectScope: '' }); 
       } else {
         setStatusMessage(currentLang === 'KH' ? '❌ មានបញ្ហាក្នុងការបញ្ជូនសារ!' : '❌ Failed to transmit message!');
         setShowToast(true);
@@ -70,8 +70,6 @@ export default function ContactForm({ text, currentLang }) {
   return (
     <div className="w-full bg-[#0d111c]/60 border border-slate-800/60 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
       <form onSubmit={handleSubmit} className="space-y-5">
-        
-        {/* IDENTITY INPUT */}
         <div className="space-y-2">
           <label className="block text-[11px]  tracking-widest text-slate-400 uppercase">
             {text.labelName}
@@ -85,8 +83,6 @@ export default function ContactForm({ text, currentLang }) {
             className="w-full bg-[#06080f]/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 outline-none transition-colors "
           />
         </div>
-
-        {/* EMAIL ENDPOINT INPUT */}
         <div className="space-y-2">
           <label className="block text-[11px]  tracking-widest text-slate-400 uppercase">
             {text.labelEmail}
@@ -100,8 +96,6 @@ export default function ContactForm({ text, currentLang }) {
             className="w-full bg-[#06080f]/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 outline-none transition-colors "
           />
         </div>
-
-        {/* PROJECT SCOPE TEXTAREA */}
         <div className="space-y-2">
           <label className="block text-[11px]  tracking-widest text-slate-400 uppercase">
             {text.labelMsg}
@@ -115,8 +109,6 @@ export default function ContactForm({ text, currentLang }) {
             className="w-full bg-[#06080f]/80 border border-slate-800 focus:border-cyan-500 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-600 outline-none  resize-none transition-colors"
           />
         </div>
-
-        {/* SUBMIT BUTTON */}
         <button
           type="submit"
           className="w-full bg-[#00bcd4] hover:bg-[#00acc1] active:scale-[0.99] text-slate-950 font-medium text-sm py-3.5 rounded-xl transition-all cursor-pointer tracking-wider uppercase "
@@ -124,8 +116,6 @@ export default function ContactForm({ text, currentLang }) {
           {text.btnSubmit}
         </button>
       </form>
-
-      {/* Toast Alert UI */}
       <AnimatePresence>
         {showToast && (
           <motion.div
