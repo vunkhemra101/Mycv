@@ -7,7 +7,7 @@ import { TbBrandCpp } from 'react-icons/tb';
 export default function Skills({ currentLang }) {
   const translations = {
     EN: {
-      title: "Technical Stack",
+      title: "TECHNICAL STACK",
       subtitle: "Select a stack to view specific language competencies.",
       categories: {
         frontend: { title: 'Frontend Development', icon: '🌐' },
@@ -47,9 +47,10 @@ const skillDetails = {
     <section id="skills" className="max-w-4xl mx-auto px-4 py-24 border-t border-slate-900">
       <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12">
         <div className="text-center md:text-left space-y-2">
-          <h2 className="text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-3xl  tracking-tight text-white">
             {content.title}
           </h2>
+          <div className="w-12 h-1 bg-cyan-500 mx-auto rounded-full" />
           <p className="text-sm text-slate-400">
             {content.subtitle}
           </p>
@@ -57,7 +58,7 @@ const skillDetails = {
         <div className="relative w-64">
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-            className="w-full flex items-center justify-between px-5 py-3 rounded-full border border-slate-800 bg-slate-900/60 backdrop-blur-md text-sm font-medium text-slate-200 hover:border-cyan-500/50 transition-all duration-200"
+            className="w-full flex items-center justify-between px-5 py-3 rounded-full border border-slate-800 bg-slate-900/60 backdrop-blur-md text-sm  text-slate-200 hover:border-cyan-500/50 transition-all duration-200"
           >
             <span className="flex items-center gap-2">
               <span>{content.categories[activeCategory].icon}</span>

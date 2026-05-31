@@ -48,11 +48,12 @@ export default function About({ currentLang }) {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="md:col-span-7 space-y-5"
         >
-          <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-white uppercase">
+          <h2 className="text-4xl sm:text-5xl  tracking-tight text-white uppercase">
             {content.title}
           </h2>
+          <div className="w-12 h-1 bg-cyan-500  rounded-full" />
 
-          <h3 className="text-sm tracking-widest uppercase text-cyan-400 font-bold">
+          <h3 className="text-sm tracking-widest uppercase text-cyan-400 ">
             {content.subtitle}
           </h3>
 
@@ -70,7 +71,7 @@ export default function About({ currentLang }) {
             {content.traits.map((trait) => (
               <span
                 key={trait}
-                className="text-[11px]  font-semibold bg-slate-900 border border-slate-800 text-slate-300 px-4 py-1.5 rounded-full hover:border-cyan-500/30 hover:text-cyan-400 transition-colors duration-300"
+                className="text-[11px]  bg-slate-900 border border-slate-800 text-slate-300 px-4 py-1.5 rounded-full hover:border-cyan-500/30 hover:text-cyan-400 transition-colors duration-300"
               >
                 {trait}
               </span>

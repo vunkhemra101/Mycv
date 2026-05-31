@@ -6,7 +6,7 @@ import ContactForm from '../client/ContactForm'; //
 export default function Contact({ currentLang }) {
   const translations = {
     EN: {
-      sectionTitle: "Get In Touch",
+      sectionTitle: "GET IN TOUCH",
       channelsTitle: "Direct Channels",
       connectTitle: "Connect Externally",
       labelName: "Identity",
@@ -34,14 +34,14 @@ export default function Contact({ currentLang }) {
   const content = translations[currentLang] || translations.EN;
 
   return (
-    <section id="contact" className="max-w-6xl mx-auto px-4 py-24 border-t border-slate-900 bg-[#070a13]">
+    <section id="contact" className="max-w-6xl mx-auto px-4 py-24 border-t border-slate-900 ">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="text-center space-y-3 mb-16"
       >
-        <h2 className="text-3xl font-bold tracking-tight text-white">
+        <h2 className="text-3xl  tracking-tight text-white">
           {content.sectionTitle}
         </h2>
         <div className="w-12 h-1 bg-cyan-500 mx-auto rounded-full" />

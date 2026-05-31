@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 export default function Services({ currentLang }) {
   const translations = {
     EN: {
-      sectionTitle: "Services",
+      sectionTitle: "SERVICES",
       items: [
         { title: 'Frontend Development', desc: 'Crafting responsive, high-performance web systems using React, clean CSS workflows, and micro-animations.', icon: '💻' },
         { title: 'Backend Systems', desc: 'Designing secure application logic, database integrations, and optimized web endpoint architectures.', icon: '⚙️' },
@@ -27,13 +27,13 @@ export default function Services({ currentLang }) {
 
   return (
     <section id="services" className="max-w-6xl mx-auto px-4 py-24 border-t border-slate-900">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         className="text-center space-y-3 mb-16"
       >
-        <h2 className="text-3xl font-bold tracking-tight text-white">
+        <h2 className="text-3xl  tracking-tight text-white">
           {content.sectionTitle}
         </h2>
         <div className="w-12 h-1 bg-cyan-500 mx-auto rounded-full" />
