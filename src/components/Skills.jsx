@@ -129,7 +129,7 @@ const skillDetails = {
                 className="p-5 rounded-[0.5rem] border border-slate-800/80 bg-slate-900/40 hover:border-slate-700 transition-all duration-300 group"
               >
                 <div className="flex justify-between items-center mb-4">
-                  <span className="text-sm font-semibold gap-2 flex text-slate-200 group-hover:text-cyan-400 transition-colors">
+                  <span className="text-sm -tracking-tighter gap-2 flex text-slate-200 group-hover:text-cyan-400 transition-colors">
                     <span className='mt-0.5'>{skill.icon}</span>{skill.name}
                   </span>
                   <span className="text-xs font-mono font-bold px-3 py-1 rounded-full bg-slate-950 border border-slate-800 text-cyan-400">

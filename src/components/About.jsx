@@ -57,13 +57,13 @@ export default function About({ currentLang }) {
             {content.subtitle}
           </h3>
 
-          <div className="space-y-4 text-slate-400 leading-relaxed relative px-6 py-3 overflow-hidden transition-colors duration-300
+          <div className="space-y-4 text-slate-400 text-left  leading-relaxed relative px-6 py-3 overflow-hidden transition-colors duration-300
                         before:absolute before:left-0 before:top-0 before:h-0 before:w-[4px] before:bg-blue-500 before:transition-all before:duration-300 before:ease-in-out
                         hover:before:h-full text-sm sm:text-base font-normal">
             <p>
               {content.p1}
             </p>
-            <p>
+            <p> 
               {content.p2}
             </p>
           </div>

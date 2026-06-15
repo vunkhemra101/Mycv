@@ -6,7 +6,7 @@ export default function Hero({ currentLang }) {
   const content = {
     EN: {
       welcome: "WELCOME TO MY PORTFOLIO",
-      intro: "My name is",
+      intro: "MY NAME IS",
       name: "Vun Khemra",
       desc: "My name is Vun Khemara. I am a first-year Computer Science student at the Royal University of Phnom Penh, and I am currently studying a Full Stack course at the ETEC Center. My dream is to become a highly skilled Full Stack Web Developer capable of building efficient, high-performance web systems.",
       btnTouch: "Get In Touch",
@@ -48,27 +48,26 @@ export default function Hero({ currentLang }) {
   }, [displayText, isDeleting, currentLang]);
 
   return (
-    <section className="max-w-6xl mx-auto px-4 pt-20 pb-24 md:py-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <section className="max-w-5xl mx-auto px-4 pt-20 pb-24 md:py-32 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="flex-1 space-y-6 text-center md:text-left"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-xs  tracking-wider">
-          <span className="w-2 h-0.5​​ rounded-full  py-3 bg-cyan-400 animate-pulse" />
-          <div className='text-sm'>{currentContent.welcome}</div>
+        <div className="  flex  items-center md:gap-15 gap-10  px-3 py-2  rounded-xl border border-cyan-500/30 bg-cyan-500/5 text-cyan-400 text-xs  tracking-wider">
+          <span className="w-6  h-1​ rounded-full  py-3 bg-cyan-400 animate-pulse" />
+          <div className='text-sm '>{currentContent.welcome}</div>
         </div>
-
-        <h1 className="text-3xl sm:text-4xl md:text-4xl font-extrabold tracking-tight text-white min-h-[48px] sm:min-h-[60px] md:min-h-[72px]">
-          {currentContent.intro}{' '}
+        <div className='text-3xl font-bold '>{currentContent.intro}{' '}</div>
+        <h1 className="text-3xl  sm:text-4xl  md:text-4xl  tracking-tight text-white min-h-[48px] sm:min-h-[60px] md:min-h-[72px]">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 inline-flex select-none">
             {displayText}
             <motion.span animate={{ opacity: [1, 0] }} transition={{ duration: 0.6, repeat: Infinity }} className="text-cyan-400 ml-1">|</motion.span>
           </span>
         </h1>
 
-        <p className="text-lg text-left md:text-xl text-slate-400 max-w-xl leading-relaxed">
+        <p className="text-sm text-justify md:text-xl text-slate-400 max-w-xl leading-relaxed">
           {currentContent.desc}
         </p>
 
