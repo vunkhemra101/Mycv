@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import { Analytics } from '@vercel/analytics/react';
 // import ContactForm from './client/ContactForm';
 
 
@@ -38,6 +39,7 @@ export default function App() {
           <Footer currentLang={currentLang} />
         </footer>
         <ScrollToTop currentLang={currentLang} />
+        <Analytics/>
       </div>
     </div>
   );
