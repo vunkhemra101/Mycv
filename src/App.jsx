@@ -33,7 +33,6 @@ export default function App() {
           <Services currentLang={currentLang} />
           <Contact currentLang={currentLang} />
         {/* <ContactForm/> */}
-
         </main>
         <footer className="relative z-10">
           <Footer currentLang={currentLang} />
