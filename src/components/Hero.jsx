@@ -80,7 +80,7 @@ export default function Hero({ currentLang }) {
           </a>
         </div>
       </motion.div>
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, delay: 0.2 }}
@@ -92,7 +92,7 @@ export default function Hero({ currentLang }) {
             <img className="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-500" src={profilecv} alt="Vun Khemra" />
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }
